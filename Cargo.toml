@@ -1,0 +1,12 @@
+[package]
+name = "breaking-encryptdef"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aes-gcm = "0.10"        # ou versão compatível
+aes = "0.8"             # ou a versão compatível com o aes-gcm que está utilizando
+base64 = "0.21"
+clap = { version = "4", features = ["derive"] }
+scrypt = "0.8"          # ou a versão que contenha `Params`
+rayon = "1.5"
